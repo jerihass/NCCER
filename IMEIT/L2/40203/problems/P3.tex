@@ -1,0 +1,20 @@
+%problem 3
+\begin{circuitikz}[american voltages]
+\draw
+	(0,0) to [short, *-] (0, 0)
+	to [R, l=2$\Omega$] (2.0, 0)
+	to [short] (2.0, 0)
+	to [short] (2.0, 0.5)
+	to [short] (2.0, 0.5)
+	to [R, l=5$\Omega$] (4.0, 0.5)
+	to [short] (4.0, 0.5)
+	to [short] (4.0, 0.0)
+	to [short] (4.0, 0.0)
+	to [R, l=10$\Omega$] (6.0, 0)
+	to [short, -*] (6.0, 0)
+	(2.0, 0) to [short] (2.0, -0.5)
+	to [short] (2.0, -0.5)
+	to [R, l_=9$\Omega$] (4.0, -0.5)
+	to [short] (4.0, -0.5)
+	to [short] (4.0, -0.0);
+\end{circuitikz}

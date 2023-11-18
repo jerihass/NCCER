@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{adjustbox}
+\usepackage{circuitikz}
+\pagestyle{empty}
+\textwidth 6in
+\oddsidemargin 0.25in
+\topmargin -0.25in
+\textheight 8.5in
+\begin{document}
+\begin{flushleft}
+
+Steps for reducing resistances:
+\begin{minipage}[t]{\linewidth}
+	\adjustbox{valign=t}{%
+	\input{problems/equivalent_s1.tex}
+}
+\end{minipage}
+\begin{enumerate}
+\medskip
+\item Find smallest groups. In this case, R$_2$ with R$_4$ and R$_6$ with R$_7$ are parallel groups so must be reduced first.
+\begin{minipage}[t]{\linewidth}
+	\adjustbox{valign=t}{%
+	\input{problems/equivalent_s2.tex}
+}
+\end{minipage}
+\medskip
+\item In the next step R$_1$, R$_{2,4}$ and R$_3$ are in series, as are R$_5$ and R$_{6,7}$.
+\begin{minipage}[t]{\linewidth}
+	\adjustbox{valign=t}{%
+	\input{problems/equivalent_s3.tex}
+}
+\end{minipage}
+\medskip
+\item In the next step R$_{1,2,4,3}$ and R$_{5,6,7}$ are parallel, so reduce those.
+
+\begin{minipage}[t]{\linewidth}
+	\adjustbox{valign=t}{%
+	\input{problems/equivalent_s4.tex}
+}
+
+\item The final reduced resistance is represented by a single resistance.
+
+\end{minipage}
+\end{enumerate}
+\end{flushleft}
+\end{document}
+
